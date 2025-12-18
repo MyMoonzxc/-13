@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+
+int main() {
+    
+    char Name[50];
+    char Snew[100] = "HELLO, ";
+
+    printf("Enter your name: ");
+    scanf("%s", Name);
+
+    strcat(Snew, Name);
+    strcat(Snew, "!");
+
+    printf("%s\n", Snew);
+
+    return 0;
+} 
