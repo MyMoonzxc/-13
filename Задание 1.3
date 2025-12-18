@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main() {
+    
+    char Name[50];
+    char Snew[100] = "Hello, ";
+
+    printf("Enter your name: ");
+    scanf("%s", Name);
+    strcat(Snew, Name);
+    strcat(Snew, "!");
+
+    int current_length = strlen(Snew);
+    for (int i = current_length; i < 40; i++) {
+        strcat(Snew, "!");
+    }
+
+    printf("%s\n", Snew);
+
+    return 0;
+} 
